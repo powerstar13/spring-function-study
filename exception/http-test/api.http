@@ -1,0 +1,11 @@
+### get exception
+GET http://localhost:8080/api/user?name=&age=
+
+### post exception
+POST http://localhost:8080/api/user
+Content-Type: application/json
+
+{
+  "name": "",
+  "age": 0
+}
