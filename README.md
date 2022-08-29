@@ -7,3 +7,5 @@
 3. Spring Boot Exception 처리
    - @RestControllerAdvice 애노테이션을 사용하여 한 곳에서 Exception 관리
    - @ExceptionHandler 애노테이션을 사용하여 Exception 종류별로 핸들링
+4. Spring Boot Validation을 통한 모범 사례
+   - Exception 핸들러의 Response 메시지 모듈화
