@@ -7,5 +7,17 @@ Content-Type: application/json
   "age": 10,
   "email": "master@gamil.com",
   "phoneNumber": "010-1111-2222",
-  "reqYearMonth": "a111111"
+  "reqYearMonth": "111111",
+  "cars": [
+    {
+      "name": "K5",
+      "car_number": "",
+      "TYPE": ""
+    },
+    {
+      "name": "Q5",
+      "car_number": "",
+      "TYPE": ""
+    }
+  ]
 }
