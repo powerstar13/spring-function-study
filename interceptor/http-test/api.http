@@ -1,0 +1,5 @@
+### public
+GET http://localhost:8080/api/public/hello
+
+### private
+GET http://localhost:8080/api/private/hello?name=abc

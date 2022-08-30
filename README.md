@@ -12,3 +12,8 @@
 5. Spring Boot Filter
    - javax.servlet.Filter 인터페이스 상속받아 구현하기
    - Request와 Response의 내용을 읽을 경우 이미 읽은 내용에 대해 대비하기 위해 전처리와 후처리가 필요함에 주의
+6. Spring Boot Interceptor
+   - Interceptor란 Filter와 매우 유사한 형태로 존재하지만, 차이점은 Spring Context에 등록됨
+   - AOP와 유사한 기능을 제공할 수 있으며, 주로 인증 단계를 처리하거나, Logging을 하는 데 사용
+   - Interceptor에서도 Filter와 마찬가지로 Request, Response의 내용을 한 번 읽으면 다시 읽을 수 없는 문제가 발생할 수 있음 
+     - 그래서 Filter에서 ContentCachingRequestWrapper, ContentCachingResponseWrapper 클래스를 사용하여 감싸주면 Interceptor에서 HttpServletRequest, HttpServletResponse를 형변환하여 사용할 수 있음
