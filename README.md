@@ -17,3 +17,8 @@
    - AOP와 유사한 기능을 제공할 수 있으며, 주로 인증 단계를 처리하거나, Logging을 하는 데 사용
    - Interceptor에서도 Filter와 마찬가지로 Request, Response의 내용을 한 번 읽으면 다시 읽을 수 없는 문제가 발생할 수 있음 
      - 그래서 Filter에서 ContentCachingRequestWrapper, ContentCachingResponseWrapper 클래스를 사용하여 감싸주면 Interceptor에서 HttpServletRequest, HttpServletResponse를 형변환하여 사용할 수 있음
+7. Spring Boot Async
+   - Spring이 지정해주는 Thread가 아닌 직접 정의한 Thread를 사용할 수도 있음
+     - WARN: Thread의 설정값은 경험치가 많이 쌓여야 하는 부분이기 때문에 신중해야 함
+   - @Async: 비동기로 작동하기 위한 애노테이션
+   - CompletableFuture: Client에게 Response를 내보내주기 위해 사용
