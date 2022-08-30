@@ -1,0 +1,8 @@
+### Validation
+POST http://localhost:8080/api/temp/user
+Content-Type: application/json
+
+{
+  "name": "master",
+  "age": 10
+}
